@@ -22,6 +22,8 @@ abstract public class IncDecValueAction extends EditorAction
             {
                 public void executeWriteAction(final Editor editor, DataContext dataContext)
                 {
+                    final IncDecValue incDecValue = new IncDecValue(getAction());
+
                     editor.getCaretModel().runForEachCaret(new CaretAction()
                     {
                         public void perform(Caret caret)
@@ -37,8 +39,7 @@ abstract public class IncDecValueAction extends EditorAction
                                 }
                             }
 
-                            final String s = transform(selectedText);
-                            editor.getDocument().replaceString(caret.getSelectionStart(), caret.getSelectionEnd(), s);
+                            incDecValue.execute(caret);
                         }
                     });
                 }
@@ -47,5 +48,5 @@ abstract public class IncDecValueAction extends EditorAction
 
     }
 
-    abstract public String transform(String s);
+    abstract protected IncDecValueActions getAction();
 }
