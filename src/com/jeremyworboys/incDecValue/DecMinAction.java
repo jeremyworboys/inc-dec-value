@@ -1,6 +1,6 @@
 package com.jeremyworboys.incDecValue;
 
-public class DecrementValueAction extends IncDecValueAction
+public class DecMinAction extends IncDecValueAction
 {
     protected IncDecValueActions getAction()
     {
