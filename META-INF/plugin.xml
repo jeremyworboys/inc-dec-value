@@ -1,0 +1,46 @@
+<idea-plugin version="2">
+  <id>com.jeremyworboys.incDecValue</id>
+  <name>Inc Dec Value</name>
+  <version>1.0</version>
+  <vendor email="jw@jeremyworboys.com" url="http://jeremyworboys.com">Jeremy Worboys</vendor>
+
+  <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+      <action id="IncrementValueAction" class="com.jeremyworboys.incDecValue.IncrementValueAction" text="Increment Value">
+          <keyboard-shortcut keymap="$default" first-keystroke="alt UP"/>
+      </action>
+      <action id="DecrementValueAction" class="com.jeremyworboys.incDecValue.DecrementValueAction" text="Decrement Value">
+          <keyboard-shortcut keymap="$default" first-keystroke="alt DOWN"/>
+      </action>
+  </actions>
+
+</idea-plugin>
