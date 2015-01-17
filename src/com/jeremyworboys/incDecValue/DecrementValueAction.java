@@ -4,7 +4,7 @@ public class DecrementValueAction extends IncDecValueAction
 {
     public String transform(String s)
     {
-        boolean isFullyUpperCase = s.equals(s.toUpperCase());
+        boolean isFullyUpperCase = s.toUpperCase().equals(s);
 
         if (isFullyUpperCase) {
             return Character.toString(s.charAt(0)) + s.substring(1).toLowerCase();
