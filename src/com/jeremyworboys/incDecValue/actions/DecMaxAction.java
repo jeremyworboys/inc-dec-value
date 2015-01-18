@@ -1,11 +1,11 @@
 package com.jeremyworboys.incDecValue.actions;
 
-import com.jeremyworboys.incDecValue.IncDecAmount;
+import com.jeremyworboys.incDecValue.Amount;
 
 public class DecMaxAction extends IncDecValueAction
 {
-    protected IncDecAmount getAction()
+    protected Amount getAction()
     {
-        return IncDecAmount.DEC_MAX;
+        return Amount.DEC_MAX;
     }
 }

@@ -14,7 +14,7 @@ abstract public class Adjuster
         next = adjuster;
     }
 
-    public void transform(IncDecAmount action, Caret caret)
+    public void transform(Amount action, Caret caret)
     {
         Boolean transformed = doTransform(action, caret);
 
@@ -33,5 +33,5 @@ abstract public class Adjuster
         caret.getEditor().getDocument().replaceString(region.getStartOffset(), region.getEndOffset(), replacement);
     }
 
-    abstract protected Boolean doTransform(IncDecAmount action, Caret caret);
+    abstract protected Boolean doTransform(Amount action, Caret caret);
 }

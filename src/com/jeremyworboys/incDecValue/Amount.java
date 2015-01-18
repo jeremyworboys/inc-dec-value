@@ -3,7 +3,7 @@ package com.jeremyworboys.incDecValue;
 /**
  * Created by jeremyworboys on 18/01/15.
  */
-public enum IncDecAmount
+public enum Amount
 {
     INC_MIN, DEC_MIN,
     INC_MAX, DEC_MAX,

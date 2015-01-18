@@ -1,11 +1,11 @@
 package com.jeremyworboys.incDecValue.actions;
 
-import com.jeremyworboys.incDecValue.IncDecAmount;
+import com.jeremyworboys.incDecValue.Amount;
 
 public class IncAllAction extends IncDecValueAction
 {
-    protected IncDecAmount getAction()
+    protected Amount getAction()
     {
-        return IncDecAmount.INC_ALL;
+        return Amount.INC_ALL;
     }
 }
