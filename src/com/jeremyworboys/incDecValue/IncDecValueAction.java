@@ -22,8 +22,6 @@ abstract public class IncDecValueAction extends EditorAction
             {
                 public void executeWriteAction(final Editor editor, DataContext dataContext)
                 {
-                    final IncDecValue incDecValue = new IncDecValue(getAction());
-
                     editor.getCaretModel().runForEachCaret(new CaretAction()
                     {
                         public void perform(Caret caret)
@@ -39,13 +37,29 @@ abstract public class IncDecValueAction extends EditorAction
                                 }
                             }
 
-                            incDecValue.execute(caret);
+                            Adjuster adjuster = buildAdjusterChain();
+                            adjuster.transform(getAction(), caret);
                         }
                     });
                 }
             });
         }
+    }
 
+    protected static Adjuster buildAdjusterChain()
+    {
+        Adjuster stringAdjuster = new StringAdjuster();
+        Adjuster integerAdjuster = new IntegerAdjuster();
+
+//        self.apply_date()
+//        self.apply_hex_color()
+//        self.apply_floating_point()
+//        self.apply_integer()
+//        self.apply_enums()
+//        self.apply_string()
+        integerAdjuster.setNext(stringAdjuster);
+
+        return integerAdjuster;
     }
 
     abstract protected IncDecValueActions getAction();
