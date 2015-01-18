@@ -35,22 +35,22 @@
   </project-components>
 
   <actions>
-      <action id="IncMinAction" class="com.jeremyworboys.incDecValue.IncMinAction" text="Increment Value">
+      <action id="IncMinAction" class="com.jeremyworboys.incDecValue.actions.IncMinAction" text="Increment Value">
           <keyboard-shortcut keymap="$default" first-keystroke="alt UP"/>
       </action>
-      <action id="IncMaxAction" class="com.jeremyworboys.incDecValue.IncMaxAction" text="Increment Value">
+      <action id="IncMaxAction" class="com.jeremyworboys.incDecValue.actions.IncMaxAction" text="Increment Value">
           <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt UP"/>
       </action>
-      <action id="IncAllAction" class="com.jeremyworboys.incDecValue.IncAllAction" text="Increment Value">
+      <action id="IncAllAction" class="com.jeremyworboys.incDecValue.actions.IncAllAction" text="Increment Value">
           <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt UP"/>
       </action>
-      <action id="DecMinAction" class="com.jeremyworboys.incDecValue.DecMinAction" text="Decrement Value">
+      <action id="DecMinAction" class="com.jeremyworboys.incDecValue.actions.DecMinAction" text="Decrement Value">
           <keyboard-shortcut keymap="$default" first-keystroke="alt DOWN"/>
       </action>
-      <action id="DecMaxAction" class="com.jeremyworboys.incDecValue.DecMaxAction" text="Decrement Value">
+      <action id="DecMaxAction" class="com.jeremyworboys.incDecValue.actions.DecMaxAction" text="Decrement Value">
           <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt DOWN"/>
       </action>
-      <action id="DecAllAction" class="com.jeremyworboys.incDecValue.DecAllAction" text="Decrement Value">
+      <action id="DecAllAction" class="com.jeremyworboys.incDecValue.actions.DecAllAction" text="Decrement Value">
           <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt DOWN"/>
       </action>
   </actions>

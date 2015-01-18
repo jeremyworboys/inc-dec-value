@@ -1,4 +1,6 @@
-package com.jeremyworboys.incDecValue;
+package com.jeremyworboys.incDecValue.actions;
+
+import com.jeremyworboys.incDecValue.IncDecAmount;
 
 public class IncMinAction extends IncDecValueAction
 {

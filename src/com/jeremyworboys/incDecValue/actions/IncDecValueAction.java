@@ -1,4 +1,4 @@
-package com.jeremyworboys.incDecValue;
+package com.jeremyworboys.incDecValue.actions;
 
 import com.intellij.openapi.actionSystem.DataContext;
 import com.intellij.openapi.editor.Caret;
@@ -6,6 +6,10 @@ import com.intellij.openapi.editor.CaretAction;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.actionSystem.EditorAction;
 import com.intellij.openapi.editor.actionSystem.EditorWriteActionHandler;
+import com.jeremyworboys.incDecValue.Adjuster;
+import com.jeremyworboys.incDecValue.IncDecAmount;
+import com.jeremyworboys.incDecValue.IntegerAdjuster;
+import com.jeremyworboys.incDecValue.StringAdjuster;
 
 abstract public class IncDecValueAction extends EditorAction
 {
