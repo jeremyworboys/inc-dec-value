@@ -10,7 +10,8 @@ abstract public class Adjuster
 {
     private Adjuster next;
 
-    public void setNext(Adjuster adjuster) {
+    public void setNext(Adjuster adjuster)
+    {
         next = adjuster;
     }
 
