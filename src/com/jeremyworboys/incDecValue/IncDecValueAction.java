@@ -62,5 +62,5 @@ abstract public class IncDecValueAction extends EditorAction
         return integerAdjuster;
     }
 
-    abstract protected IncDecValueActions getAction();
+    abstract protected IncDecAmount getAction();
 }

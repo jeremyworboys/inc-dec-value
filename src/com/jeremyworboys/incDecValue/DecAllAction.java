@@ -2,8 +2,8 @@ package com.jeremyworboys.incDecValue;
 
 public class DecAllAction extends IncDecValueAction
 {
-    protected IncDecValueActions getAction()
+    protected IncDecAmount getAction()
     {
-        return IncDecValueActions.DEC_ALL;
+        return IncDecAmount.DEC_ALL;
     }
 }

@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  */
 public class IntegerAdjuster extends Adjuster
 {
-    protected Boolean doTransform(IncDecValueActions action, Caret caret)
+    protected Boolean doTransform(IncDecAmount action, Caret caret)
     {
         TextRange region = new TextRange(caret.getSelectionStart(), caret.getSelectionEnd());
 
@@ -44,7 +44,7 @@ public class IntegerAdjuster extends Adjuster
         return false;
     }
 
-    protected Integer getDelta(IncDecValueActions action)
+    protected Integer getDelta(IncDecAmount action)
     {
         switch (action) {
             case INC_MIN:

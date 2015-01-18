@@ -7,9 +7,9 @@ import com.intellij.openapi.editor.Caret;
  */
 public class StringAdjuster extends Adjuster
 {
-    protected Boolean doTransform(IncDecValueActions action, Caret caret)
+    protected Boolean doTransform(IncDecAmount action, Caret caret)
     {
-        if (action == IncDecValueActions.INC_ALL || action == IncDecValueActions.DEC_ALL) {
+        if (action == IncDecAmount.INC_ALL || action == IncDecAmount.DEC_ALL) {
             return false;
         }
 

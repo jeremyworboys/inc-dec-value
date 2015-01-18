@@ -2,8 +2,8 @@ package com.jeremyworboys.incDecValue;
 
 public class DecMaxAction extends IncDecValueAction
 {
-    protected IncDecValueActions getAction()
+    protected IncDecAmount getAction()
     {
-        return IncDecValueActions.DEC_MAX;
+        return IncDecAmount.DEC_MAX;
     }
 }

@@ -2,8 +2,8 @@ package com.jeremyworboys.incDecValue;
 
 public class DecMinAction extends IncDecValueAction
 {
-    protected IncDecValueActions getAction()
+    protected IncDecAmount getAction()
     {
-        return IncDecValueActions.DEC_MIN;
+        return IncDecAmount.DEC_MIN;
     }
 }
