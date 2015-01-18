@@ -6,10 +6,7 @@ import com.intellij.openapi.editor.CaretAction;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.actionSystem.EditorAction;
 import com.intellij.openapi.editor.actionSystem.EditorWriteActionHandler;
-import com.jeremyworboys.incDecValue.Adjuster;
-import com.jeremyworboys.incDecValue.Amount;
-import com.jeremyworboys.incDecValue.IntegerAdjuster;
-import com.jeremyworboys.incDecValue.StringAdjuster;
+import com.jeremyworboys.incDecValue.*;
 
 abstract public class IncDecValueAction extends EditorAction
 {
@@ -54,6 +51,7 @@ abstract public class IncDecValueAction extends EditorAction
     {
         Adjuster stringAdjuster = new StringAdjuster();
         Adjuster integerAdjuster = new IntegerAdjuster();
+        Adjuster doubleAdjuster = new DoubleAdjuster();
 
 //        self.apply_date()
 //        self.apply_hex_color()
@@ -61,9 +59,10 @@ abstract public class IncDecValueAction extends EditorAction
 //        self.apply_integer()
 //        self.apply_enums()
 //        self.apply_string()
+        doubleAdjuster.setNext(integerAdjuster);
         integerAdjuster.setNext(stringAdjuster);
 
-        return integerAdjuster;
+        return doubleAdjuster;
     }
 
     abstract protected Amount getAction();
