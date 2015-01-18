@@ -1,17 +1,19 @@
 <idea-plugin version="2">
     <id>com.jeremyworboys.incDecValue</id>
     <name>Inc Dec Value</name>
-    <version>1.0</version>
+    <version>0.1.0</version>
     <vendor email="jw@jeremyworboys.com" url="http://jeremyworboys.com">Jeremy Worboys</vendor>
 
     <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      <p>Increment and decrement numbers (integer and floating point) and string casing (upper, lower, capitalize).</p>
+      <a href="https://github.com/jeremyworboys/inc-dec-value">GitHub</a>
     ]]></description>
 
     <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+        <b>Changes in version 0.1.0:</b>
+        <ul>
+            <li>Initial public release</li>
+        </ul>
     ]]>
     </change-notes>
 
